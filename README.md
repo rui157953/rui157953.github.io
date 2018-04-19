@@ -37,6 +37,7 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
 
 # 一个简单的五子棋程序
+自己实现一个五子棋游戏程序。
 ## 自定义棋盘
 自定义View绘制一个棋盘
 ```markdown
@@ -169,6 +170,36 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
     } 
 ```
 ## 测量
+```markdown
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+
+        int widthMode = MeasureSpec.getMode(widthMeasureSpec);
+        int heightMode = MeasureSpec.getMode(heightMeasureSpec);
+        int widthSize = MeasureSpec.getSize(widthMeasureSpec);
+        int heightSize = MeasureSpec.getSize(heightMeasureSpec);
+
+        int width = Math.min(widthSize, heightSize); //取最小边
+        if (widthMode == MeasureSpec.UNSPECIFIED) {//宽不确定
+            width = heightSize;
+        } else if (heightMode == MeasureSpec.UNSPECIFIED) {//高不确定
+            width = widthSize;
+        }
+        setMeasuredDimension(width,width);
+    }
+
+    @Override
+    protected void onSizeChanged(int w, int h, int oldw, int oldh) {
+        super.onSizeChanged(w, h, oldw, oldh);
+        lineWidth = w*1.0f/lineNum; //线间距
+        broadWidth = w - lineWidth; //棋盘宽
+        broadHeight = h;    //棋盘高
+        pieceWidth = lineWidth * ratioPieceOfLineWidth; //棋子宽
+        BitmapFactory.Options options = new BitmapFactory.Options();
+        options.inJustDecodeBounds = true;
+        pieceDown = getBitmapFromRes(getResources(),R.drawable.piece_down,Math.round(lineWidth*2),Math.round(lineWidth*2)); //落子效果图片
+    }
+```
 ## 绘制
 ## 判断胜利
 ## 悔棋
