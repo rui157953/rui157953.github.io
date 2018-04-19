@@ -39,7 +39,7 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 # 一个简单的五子棋程序
 ## 自定义棋盘
 自定义View绘制一个棋盘
-
+```markdown
     public static final int MAX_COUNT_IN_LINE = 5; //5连珠
     /**黑棋悔棋次数*/
     public static int blackUndoCount = 3;   //黑棋悔棋次数
@@ -167,7 +167,7 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
             }
         });
     } 
-    
+```
 ## 测量
 ## 绘制
 ## 判断胜利
