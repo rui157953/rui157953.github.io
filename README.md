@@ -61,8 +61,6 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
     private HashMap<Integer,Point> undoPiecis = new HashMap<>();    //悔棋列表
     private Bitmap pieceDown;
     private boolean isAnimationRunning;     //动画执行中
-
-
 //    private int[][] Piecis= new int[15][15];
     private boolean isWhiteTurn;       //轮到白棋
     private boolean isGameOver;     //游戏结束
@@ -72,7 +70,6 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
     private ValueAnimator animator;     //落子动画
     private ValueAnimator UndoAnimator; //悔棋动画
     private float undoAnimatorProgress; 
-
 
     public GobangView(Context context) {
         this(context,null,0);
@@ -105,7 +102,6 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
         BitmapFactory.Options options = new BitmapFactory.Options();
         options.inJustDecodeBounds = true;
         pieceDown = BitmapFactory.decodeResource(getResources(),R.drawable.piece_down,options);
-
 //        animator = ValueAnimator.ofInt(bitmapPaint,"Alpha",);
         animator = ValueAnimator.ofInt(new int[]{255,0});
         animator.setDuration(200);
@@ -173,7 +169,6 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
             }
         });
     } 
-`
     
 ##测量
 ##绘制
