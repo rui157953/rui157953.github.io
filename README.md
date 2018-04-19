@@ -36,8 +36,8 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
 
-#一个简单的五子棋程序
-##自定义棋盘
+# 一个简单的五子棋程序
+## 自定义棋盘
 自定义View绘制一个棋盘
 `
     public static final int MAX_COUNT_IN_LINE = 5; //5连珠
@@ -61,7 +61,6 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
     private HashMap<Integer,Point> undoPiecis = new HashMap<>();    //悔棋列表
     private Bitmap pieceDown;
     private boolean isAnimationRunning;     //动画执行中
-//    private int[][] Piecis= new int[15][15];
     private boolean isWhiteTurn;       //轮到白棋
     private boolean isGameOver;     //游戏结束
     private boolean isUndo; //悔棋
@@ -102,7 +101,6 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
         BitmapFactory.Options options = new BitmapFactory.Options();
         options.inJustDecodeBounds = true;
         pieceDown = BitmapFactory.decodeResource(getResources(),R.drawable.piece_down,options);
-//        animator = ValueAnimator.ofInt(bitmapPaint,"Alpha",);
         animator = ValueAnimator.ofInt(new int[]{255,0});
         animator.setDuration(200);
         animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
@@ -170,10 +168,10 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
         });
     } 
     
-##测量
-##绘制
-##判断胜利
-##悔棋
-##添加动画
+## 测量
+## 绘制
+## 判断胜利
+## 悔棋
+## 添加动画
 
 
