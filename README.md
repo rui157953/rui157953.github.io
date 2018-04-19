@@ -42,9 +42,9 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 自定义View绘制一个棋盘
 ```markdown
     public static final int MAX_COUNT_IN_LINE = 5; //5连珠
-    /**黑棋悔棋次数*/
+    /*黑棋悔棋次数*/
     public static int blackUndoCount = 3;   //黑棋悔棋次数
-    /**白棋悔棋次数*/
+    /*白棋悔棋次数*/
     public static int whiteUndoCount = blackUndoCount;
     
     private float broadWidth ;  //棋盘宽
