@@ -37,7 +37,7 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
 
 # 一个简单的五子棋程序
-自己实现一个五子棋游戏程序。
+自己实现一个五子棋游戏程序。点击查看[全部源码](rui157953.github.io/note/五子棋游戏程序.md).
 ## 自定义棋盘
 自定义View绘制一个棋盘
 ```markdown
