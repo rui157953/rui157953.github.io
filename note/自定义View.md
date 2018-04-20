@@ -15,5 +15,11 @@ mode三种模式：
 - AT_MOST  
 父容器指定了一个可用大小即SpecSize，View的大小不能大于这个值，具体是什么要看不同View的具体实现，它对应于wrap_content。  
 
+子容器MeasureSpec受父容器影响，规则如下：  
+--------------------------------------------------------------
+chlidLayoutParams\parentSpecMode|EXACTLY|AT_MOST|UNSPECIFIED
+_____________________________________________________________
+
+
 
 
