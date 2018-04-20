@@ -1,7 +1,8 @@
 # 自定义View
 
 ## Measure
-重写OnMeasure(int widthMeasureSpec, int heightMeasureSpec)方法  
+——————————————————————————————
+重写` OnMeasure(int widthMeasureSpec, int heightMeasureSpec)`方法.
 ### MeasureSpec
 ```
 int mode = MeasureSpec.getMode(measureSpec);  
@@ -24,7 +25,16 @@ mode三种模式：
 | match_parent| EXACTLY <br/>parentSize| AT_MOST <br/>parentSize| UNSPECIFIED <br/>0|
 | wrap_content| AT_MOST <br/>parentSize| AT_MOST <br/>parentSize| UNSPECIFIED <br/>0|  
 
-调用 ` setMeasuredDimension(int measuredWidth, int measuredHeight)`方法保存测量后的尺寸。
+
+#### ViewGroup
+viewGroup 测量方法跟View 不同，在ViewGroup 中需遍历所有子元素的measure 方法，然后获取子View 的测量值再根据业务需求确定自己的宽高。  
+调用 ` setMeasuredDimension(int measuredWidth, int measuredHeight)`方法保存测量后的尺寸。  
+
+## Layout
+————————————————————————————————
+
+
+
 
 
 
