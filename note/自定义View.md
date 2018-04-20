@@ -27,7 +27,7 @@ mode三种模式：
 
 #### ViewGroup
 viewGroup 测量方法跟View 不同，在ViewGroup 中需遍历所有子元素的measure 方法，然后获取子View 的测量值再根据业务需求确定自己的宽高。  
-调用 ` setMeasuredDimension(int measuredWidth, int measuredHeight)`方法保存测量后的尺寸。    
+调用 ` setMeasuredDimension(int measuredWidth, int measuredHeight)`方法保存测量后的尺寸。  
 获取View 最终测量值最好在` onLayout`方法中。
 
 ## Layout
