@@ -22,7 +22,9 @@ mode三种模式：
 | --------------------------------| -------| -------| -----------|
 | dp/px| EXACTLY <br/> childSize| EXACTLY  <br/>childSize| EXACTLY <br/>childSize|
 | match_parent| EXACTLY <br/>parentSize| AT_MOST <br/>parentSize| UNSPECIFIED <br/>0|
-| wrap_content| AT_MOST <br/>parentSize| AT_MOST <br/>parentSize| UNSPECIFIED <br/>0|
+| wrap_content| AT_MOST <br/>parentSize| AT_MOST <br/>parentSize| UNSPECIFIED <br/>0|  
+
+调用 ` setMeasuredDimension(int measuredWidth, int measuredHeight)`方法保存测量后的尺寸。
 
 
 
