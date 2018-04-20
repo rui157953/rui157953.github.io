@@ -35,7 +35,7 @@ viewGroup 测量方法跟View 不同，在ViewGroup 中需遍历所有子元素�
 此方法只在ViewGroup 中有意义，通过重写此方法对ViewGrope 中的子元素进行布局。  
 
 ## Draw
-重写` onDraw(Canvas canvas)`方法。  
+重写` onDraw(Canvas canvas)`方法。  
 其他Draw 方法：
 - ` dispatchDraw(Canvas canvas)`
 该方法用于绘制子View ，在onDraw 之后调用。
