@@ -18,11 +18,11 @@ mode三种模式：
 子容器MeasureSpec受父容器影响，规则如下：  
 
 
-| chlidLayoutParams\ <br/> parentSpecMode    | EXACTLY| AT_MOST| UNSPECIFIED|
+|            \parentSpecMode <br/> chlidLayoutParams | EXACTLY| AT_MOST| UNSPECIFIED|
 | --------------------------------| -------| -------| -----------|
-| dp/px| EXACTLY childSize| EXACTLY childSize| EXACTLY childSize|
-| match_parent| EXACTLY parentSize| AT_MOST parentSize| UNSPECIFIED 0|
-| wrap_content| AT_MOST parentSize| AT_MOST parentSize| UNSPECIFIED 0|
+| dp/px| EXACTLY <br/> childSize| EXACTLY  <br/>childSize| EXACTLY <br/>childSize|
+| match_parent| EXACTLY <br/>parentSize| AT_MOST <br/>parentSize| UNSPECIFIED <br/>0|
+| wrap_content| AT_MOST <br/>parentSize| AT_MOST <br/>parentSize| UNSPECIFIED <br/>0|
 
 
 
