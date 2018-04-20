@@ -1,7 +1,6 @@
 # 自定义View
 
 ## Measure
-——————————————————————————————
 重写` OnMeasure(int widthMeasureSpec, int heightMeasureSpec)`方法.
 ### MeasureSpec
 ```
@@ -28,14 +27,20 @@ mode三种模式：
 
 #### ViewGroup
 viewGroup 测量方法跟View 不同，在ViewGroup 中需遍历所有子元素的measure 方法，然后获取子View 的测量值再根据业务需求确定自己的宽高。  
-调用 ` setMeasuredDimension(int measuredWidth, int measuredHeight)`方法保存测量后的尺寸。  
+调用 ` setMeasuredDimension(int measuredWidth, int measuredHeight)`方法保存测量后的尺寸。    
+获取View 最终测量值最好在` onLayout`方法中。
 
 ## Layout
-————————————————————————————————
+重写` onLayout(boolean changed, int left, int top, int right, int bottom)`方法。
+此方法只在ViewGroup 中有意义，通过重写此方法对ViewGrope 中的子元素进行布局。  
 
-
-
-
+## Draw
+重写` onDraw(Canvas canvas)`方法。  
+其他Draw 方法：
+- ` dispatchDraw(Canvas canvas)`
+该方法用于绘制子View ，在onDraw 之后调用。
+- ` onDrawForeground(Canvas canvas)` 
+该方法是api 23之后才有，用于绘制前景 ，dispatchDraw 之后调用。
 
 
 
