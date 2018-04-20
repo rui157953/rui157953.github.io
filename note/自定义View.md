@@ -16,15 +16,15 @@ mode三种模式：
 父容器指定了一个可用大小即SpecSize，View的大小不能大于这个值，具体是什么要看不同View的具体实现，它对应于wrap_content。  
 
 子容器MeasureSpec受父容器影响，规则如下：  
---------------------------------------------------------------
-chlidLayoutParams\parentSpecMode|EXACTLY|AT_MOST|UNSPECIFIED
--------------------------------------------------------------
-dp/px|EXACTLY childSize|EXACTLY childSize|EXACTLY childSize
--------------------------------------------------------------
-match_parent|EXACTLY parentSize|AT_MOST parentSize|UNSPECIFIED 0
--------------------------------------------------------------
-wrap_content|AT_MOST parentSize|AT_MOST parentSize|UNSPECIFIED 0
-----------------------------------------------------------------
+
+|chlidLayoutParams\parentSpecMode|EXACTLY|AT_MOST|UNSPECIFIED|
+|-|-|-|
+|dp/px|EXACTLY childSize|EXACTLY childSize|EXACTLY childSize|
+
+|match_parent|EXACTLY parentSize|AT_MOST parentSize|UNSPECIFIED 0|
+
+|wrap_content|AT_MOST parentSize|AT_MOST parentSize|UNSPECIFIED 0|
+
 
 
 
