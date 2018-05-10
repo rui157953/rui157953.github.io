@@ -1,4 +1,4 @@
-### 命令
+# 命令
 ```
 $ wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh  
 $ chmod +x shadowsocks-all.sh  
@@ -7,7 +7,7 @@ $ ./shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log
 
 
 
-### CentOS7使用firewalld打开关闭防火墙与端口
+# CentOS7使用firewalld打开关闭防火墙与端口
 ## firewalld的基本使用
 启动：` systemctl start firewalld`  
 查看状态： ` systemctl status firewalld `  
